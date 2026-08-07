@@ -1,102 +1,168 @@
 # ☕ Java Backend Journey
 
-> A structured learning journey to build a strong Java foundation and become a Spring Boot Backend Developer.
-
-## 👩‍💻 About This Repository
-
-This repository documents my daily progress while learning Java and preparing for enterprise backend development.
-
-Instead of only watching courses, I practice every topic with hands-on coding exercises, mini projects, and backend-oriented examples.
-
-The goal is to build a solid Java foundation before moving to Spring Boot, REST APIs, databases, Docker, and AI-integrated backend applications.
+> A daily learning journey to become a Java Backend Developer with Spring Boot and AI.
 
 ---
 
-## 🎯 Learning Roadmap
+# 👋 About
 
-### Phase 1 — Java Fundamentals
+Hi, I'm Simay.
+
+This repository documents my journey of becoming a Java Backend Developer.
+
+Instead of only watching tutorials, I build small projects every day to reinforce each concept through hands-on practice.
+
+My goal is to master Java fundamentals, Object-Oriented Programming, Spring Boot, and eventually build AI-powered backend applications.
+
+---
+
+# 🎯 Learning Roadmap
+
+## ✅ Phase 1 — Java Fundamentals
+
 - [x] Variables & Data Types
 - [x] Scanner
 - [x] Type Casting
-- [ ] Control Flow
-- [ ] Loops
-- [ ] Arrays
-- [ ] Methods
+- [x] Operators
+- [x] Conditional Statements
+- [x] Loops
+- [x] Arrays
+- [x] Methods
 
-### Phase 2 — Object-Oriented Programming
-- [ ] Classes & Objects
-- [ ] Constructors
-- [ ] Encapsulation
+---
+
+## ✅ Phase 2 — Object-Oriented Programming
+
+- [x] Classes & Objects
+- [x] Constructors
+- [x] Encapsulation
+- [x] Access Modifiers
+- [x] Getter & Setter
+- [x] Static Variables
+- [x] `this` Keyword
+- [x] `==` vs `equals()`
+
+### 🔜 Coming Next
+
 - [ ] Inheritance
 - [ ] Polymorphism
 - [ ] Abstract Classes
 - [ ] Interfaces
 
-### Phase 3 — Modern Java
-- [ ] Collections
+---
+
+## 🔜 Phase 3 — Modern Java
+
+- [ ] Collections Framework
 - [ ] Generics
 - [ ] Exception Handling
+- [ ] File I/O
 - [ ] Lambda Expressions
 - [ ] Stream API
 - [ ] Optional
 - [ ] Maven
 
-### Phase 4 — Spring Boot
+---
+
+## 🔜 Phase 4 — Spring Boot
+
 - [ ] Spring Boot
+- [ ] Dependency Injection
 - [ ] REST API
-- [ ] JPA & Hibernate
 - [ ] PostgreSQL
+- [ ] Spring Data JPA
 - [ ] Validation
 - [ ] Swagger
 - [ ] Spring Security
-- [ ] JWT
+- [ ] JWT Authentication
 - [ ] Docker
-
-### Phase 5 — AI Integration
-- [ ] AI Resume Analyzer
-- [ ] Spring Boot + Python
-- [ ] REST Communication
-- [ ] Docker Compose
 
 ---
 
-## 📂 Repository Structure
+## 🔜 Phase 5 — AI Integration
+
+- [ ] AI Resume Analyzer
+- [ ] Spring Boot + Python
+- [ ] Gemini / OpenAI API
+- [ ] REST Communication
+- [ ] Docker Compose
+- [ ] Microservice Architecture
+
+---
+
+# 📂 Repository Structure
 
 ```text
-java-backend-journey
+java-backend
 │
-├── Day-01-Java-Fundamentals
-├── Day-02-Control-Flow
-├── Day-03-Strings
-├── Day-04-Methods
-├── ...
+├── day01
+│   ├── README.md
+│   ├── StudentInformationSystem.java
+│   ├── TemperatureConverter.java
+│   └── SalaryCalculator.java
+│
+├── day02
+│   ├── README.md
+│   ├── AtmMenu.java
+│   ├── Calculator.java
+│   ├── Car.java
+│   └── StudentGradeManager.java
+│
+├── day03
+│   ├── README.md
+│   ├── BankAccount.java
+│   ├── Employee.java
+│   └── EqualsDemo.java
+│
+└── README.md
 ```
 
 ---
 
-## 🚀 Daily Progress
+# 📅 Daily Progress
 
-| Day | Topic | Status |
-|------|-------|--------|
-| 01 | Java Fundamentals | ✅ |
-| 02 | Control Flow | ⏳ |
-| 03 | Strings | ⏳ |
-| 04 | Methods | ⏳ |
-| 05 | OOP | ⏳ |
+| Day | Topics | Status |
+|------|-----------------------------|:------:|
+| Day 01 | Java Fundamentals | ✅ |
+| Day 02 | Control Flow & OOP Basics | ✅ |
+| Day 03 | Encapsulation & Static | ✅ |
+| Day 04 | Inheritance *(Coming Soon)* | ⏳ |
 
 ---
 
-## 🛠 Tech Stack
+# 💻 Mini Projects
+
+### Day 1
+
+- Student Information System
+- Temperature Converter
+- Salary Calculator
+
+### Day 2
+
+- ATM Menu
+- Calculator
+- Car Class
+- Student Grade Manager
+
+### Day 3
+
+- Bank Account
+- Employee Management
+- Equals Demo
+
+---
+
+# 🛠 Tech Stack
 
 - Java
 - Git
+- GitHub
 - VS Code
-
-> More technologies will be added as the journey progresses.
 
 ---
 
-## 🎯 Final Goal
+# 🎯 Final Goal
 
 Build production-ready backend applications using:
 
@@ -105,4 +171,26 @@ Build production-ready backend applications using:
 - PostgreSQL
 - Docker
 - JWT Authentication
+- Redis
+- RabbitMQ
 - AI Integration
+- REST APIs
+- Microservices
+
+---
+
+## 📈 Current Progress
+
+🟩 Java Fundamentals
+
+🟩 OOP Basics
+
+🟨 Modern Java
+
+⬜ Spring Boot
+
+⬜ AI Backend
+
+---
+
+⭐ This repository is updated daily as I continue my backend development journey.
