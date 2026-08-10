@@ -54,6 +54,8 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 
 ## ✅ Phase 2 — Object-Oriented Programming
 
+### Classes & Encapsulation
+
 - [x] Classes & Objects
 - [x] Object Creation with `new`
 - [x] Constructors
@@ -68,6 +70,10 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Getter & Setter Methods
 - [x] Static Variables
 - [x] Static Methods
+- [x] `==` vs `equals()`
+
+### Inheritance & Polymorphism Foundations
+
 - [x] Method Overloading
 - [x] Inheritance
 - [x] `extends`
@@ -75,15 +81,19 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Constructor Chaining
 - [x] Method Overriding
 - [x] `@Override`
-- [x] `==` vs `equals()`
 
-### 🔜 Coming Next
+### Abstraction & Interfaces
 
+- [x] Abstract Classes
+- [x] Abstract Methods
+- [x] Interfaces
+- [x] `implements`
+- [x] Multiple Interface Implementation
+- [x] Abstract Class + Interface
 - [ ] Polymorphism
-- [ ] Abstract Classes
-- [ ] Abstract Methods
-- [ ] Interfaces
-- [ ] Interface Extension
+- [ ] Upcasting & Downcasting
+- [ ] Dynamic Method Dispatch
+- [ ] Interface References
 
 ---
 
@@ -169,6 +179,39 @@ java-backend
 │   ├── Car.java
 │   └── EmployeeHierarchy.java
 │
+├── day05
+│   ├── README.md
+│   ├── AnimalSystem.java
+│   ├── Dog.java
+│   ├── Cat.java
+│   ├── ShapeSystem.java
+│   ├── Circle.java
+│   ├── Rectangle.java
+│   ├── PaymentSystem.java
+│   ├── CreditCardPayment.java
+│   ├── PayPalPayment.java
+│   ├── BankTransferPayment.java
+│   ├── Employee.java
+│   ├── Developer.java
+│   └── Manager.java
+│
+├── day06
+│   ├── README.md
+│   ├── Flyable.java
+│   ├── Bird.java
+│   ├── Airplane.java
+│   ├── PaymentMethod.java
+│   ├── CreditCardPayment.java
+│   ├── PayPalPayment.java
+│   ├── BankTransferPayment.java
+│   ├── Animal.java
+│   ├── Duck.java
+│   ├── Swimmable.java
+│   ├── NotificationService.java
+│   ├── EmailNotification.java
+│   ├── SmsNotification.java
+│   └── PushNotification.java
+│
 └── README.md
 ```
 
@@ -182,9 +225,9 @@ java-backend
 | Day 02 | Control Flow, Arrays & OOP Basics | ✅ |
 | Day 03 | Encapsulation, Access Control & Static | ✅ |
 | Day 04 | Overloading, Inheritance, `super` & Overriding | ✅ |
-| Day 05 | Polymorphism & Abstract Classes | ⏳ |
-| Day 06 | Interfaces | ⏳ |
-| Day 07 | Exception Handling | ⏳ |
+| Day 05 | Abstract Classes & Abstract Methods | ✅ |
+| Day 06 | Interfaces & Multiple Interface Implementation | ✅ |
+| Day 07 | Polymorphism | ⏳ |
 
 ---
 
@@ -209,12 +252,31 @@ java-backend
 - Employee
 - Equals Demo
 
-### Day 4 — Inheritance & Access Modifiers
+### Day 4 — Inheritance & Overloading
 
 - Calculator — Method Overloading
 - Person — Access Modifiers
 - Vehicle & Car — Inheritance
-- Employee Hierarchy — Inheritance & Method Overriding
+- Employee Hierarchy — Method Overriding
+
+### Day 5 — Abstract Classes
+
+- Animal System
+- Shape System
+- Payment System
+- Employee Hierarchy
+- Abstract Classes & Abstract Methods
+
+### Day 6 — Interfaces
+
+- Flyable Interface
+- Bird & Airplane
+- Payment Method Interface
+- Credit Card / PayPal / Bank Transfer
+- Abstract Animal + Flyable + Swimmable
+- Notification Service
+- Email / SMS / Push Notifications
+- Multiple Interface Implementation
 
 ---
 
@@ -242,6 +304,12 @@ Inheritance
 super
        ↓
 Method Overriding
+       ↓
+Abstract Classes
+       ↓
+Abstract Methods
+       ↓
+Interfaces
        ↓
 Polymorphism
        ↓
@@ -303,7 +371,7 @@ Build production-ready backend applications using:
 
 🟩🟩🟩🟩🟩 Java Fundamentals
 
-🟩🟩🟩🟩 OOP Fundamentals
+🟩🟩🟩🟩🟩 OOP Fundamentals
 
 🟨 Modern Java
 
@@ -329,8 +397,10 @@ Build production-ready backend applications using:
 
 ## 🚀 Journey Status
 
-**Day 4 completed.**
+**Day 6 completed.**
 
-Currently focusing on building a strong Java and OOP foundation before moving into Spring Boot.
+Currently building a strong Java and Object-Oriented Programming foundation.
+
+The next major topic is **Polymorphism**, followed by Modern Java features and eventually Spring Boot.
 
 ⭐ This repository is updated daily as I continue my backend development journey.
