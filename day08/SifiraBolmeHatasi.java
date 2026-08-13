@@ -14,8 +14,8 @@ public class SifiraBolmeHatasi extends Exception{
 class BolmeIslemi{
     public static void main (String[] args){
         String yanit;
+        Scanner klavye = new Scanner(System.in);
         do{
-            Scanner klavye = new Scanner(System.in);
             try{
                 System.out.print("bölünecek sayı: \t");
                 int a = klavye.nextInt();
