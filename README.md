@@ -97,22 +97,22 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 
 ---
 
-## 🔜 Phase 3 — Modern Java
+### Inheritance & Polymorphism
 
-- [ ] Collections Framework
-- [ ] ArrayList
-- [ ] HashMap
-- [ ] HashSet
-- [ ] Generics
-- [ ] Exception Handling
-- [ ] Custom Exceptions
-- [ ] File I/O
-- [ ] Lambda Expressions
-- [ ] Stream API
-- [ ] Optional
-- [ ] Maven
-
----
+- [x] Method Overloading
+- [x] Inheritance
+- [x] `extends`
+- [x] `super`
+- [x] Constructor Chaining
+- [x] Method Overriding
+- [x] `@Override`
+- [x] Polymorphism
+- [x] Abstract Classes
+- [x] Abstract Methods
+- [x] Interfaces
+- [x] `implements`
+- [x] Multiple Interface Implementation
+- [x] Abstract Class + Interface
 
 ## 🔜 Phase 4 — Spring Boot
 
@@ -192,8 +192,7 @@ java-backend
 │   ├── PayPalPayment.java
 │   ├── BankTransferPayment.java
 │   ├── Employee.java
-│   ├── Developer.java
-│   └── Manager.java
+│   └── Developer.java
 │
 ├── day06
 │   ├── README.md
@@ -212,8 +211,28 @@ java-backend
 │   ├── SmsNotification.java
 │   └── PushNotification.java
 │
+├── day08
+│   ├── README.md
+│   ├── SifiraBolmeHatasi.java
+│   ├── BolmeIslemi.java
+│   ├── InvalidAgeException.java
+│   ├── ValidateAge.java
+│   ├── NegativeNumberException.java
+│   └── ValidateNumber.java
+│
+├── day09
+│   ├── README.md
+│   ├── ArrayListPractice.java
+│   ├── StudentListManager.java
+│   ├── NumberListPractice.java
+│   ├── LinkedListPractice.java
+│   ├── HashSetPractice.java
+│   ├── LinkedHashSetPractice.java
+│   ├── TreeSetPractice.java
+│   ├── HashMapPractice.java
+│   └── StudentManagementSystem.java
+│
 └── README.md
-```
 
 ---
 
@@ -227,7 +246,9 @@ java-backend
 | Day 04 | Overloading, Inheritance, `super` & Overriding | ✅ |
 | Day 05 | Abstract Classes & Abstract Methods | ✅ |
 | Day 06 | Interfaces & Multiple Interface Implementation | ✅ |
-| Day 07 | Polymorphism | ⏳ |
+| Day 07 | General Java & OOP Review | ✅ |
+| Day 08 | Exception Handling & Custom Exceptions | ✅ |
+| Day 09 | Collections — List, Set & Map | ✅ |
 
 ---
 
@@ -277,6 +298,46 @@ java-backend
 - Notification Service
 - Email / SMS / Push Notifications
 - Multiple Interface Implementation
+
+### Day 7 — General Review
+
+- Java Fundamentals Review
+- OOP Review
+- Constructors & this
+- Encapsulation
+- Inheritance
+- super
+- Overloading & Overriding
+- Abstract Classes
+- Interfaces
+- Polymorphism
+- General Knowledge Test
+
+### Day 8 — Exception Handling
+
+- Custom Exception — SifiraBolmeHatasi
+- Division Operation
+- try / catch / finally
+- throw
+- throws
+- InvalidAgeException
+- Age Validation
+- NegativeNumberException
+- Number Validation
+- InputMismatchException
+
+### Day 9 — Collections
+
+- ArrayList Practice
+- Student List Manager
+- Number List Practice
+- LinkedList Practice
+- HashSet Practice
+- LinkedHashSet Practice
+- TreeSet Practice
+- HashMap Practice
+- Student Management System
+- Collection Selection & Comparison
 
 ---
 
@@ -373,7 +434,7 @@ Build production-ready backend applications using:
 
 🟩🟩🟩🟩🟩 OOP Fundamentals
 
-🟨 Modern Java
+🟩🟩🟩 Modern Java
 
 ### Backend
 
@@ -397,10 +458,20 @@ Build production-ready backend applications using:
 
 ## 🚀 Journey Status
 
-**Day 6 completed.**
+**Day 09 completed.**
 
-Currently building a strong Java and Object-Oriented Programming foundation.
+I have completed the core Java and OOP foundation and started working with the Java Collections Framework.
 
-The next major topic is **Polymorphism**, followed by Modern Java features and eventually Spring Boot.
+Lists
+Sets
+Maps
+ArrayList
+LinkedList
+HashSet
+LinkedHashSet
+TreeSet
+HashMap
+
+The next step is to strengthen my Modern Java knowledge with Generics, Comparable, Comparator, Lambda Expressions, Stream API, Optional, and Maven before moving into Spring Boot.
 
 ⭐ This repository is updated daily as I continue my backend development journey.
