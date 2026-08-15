@@ -1,6 +1,7 @@
 package day10;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,11 +29,25 @@ public class StreamPractice {
        .map(number -> number * 2)
        .forEach(number -> System.out.println(number));
 
+       numbers.stream()
+       .sorted()
+       .forEach(number -> System.out.println(number));
+
+       numbers.stream()
+       .sorted(Comparator.reverseOrder())
+       .forEach(number -> System.out.println(number));
+
        List<Integer> result = numbers.stream()
         .filter(number -> number % 2 == 0)
         .map(number -> number * 2)
         .collect(Collectors.toList());
         System.out.println(result);
 
+        List<Integer> duplicateNumbers = List.of(
+                10, 20, 10, 30, 20, 40, 30
+        );
+        duplicateNumbers.stream()
+        .distinct()
+        .forEach(number -> System.out.println(number));
     }
 }
