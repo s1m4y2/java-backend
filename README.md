@@ -179,14 +179,14 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Method Reference `::`
 - [x] Lambda vs Method Reference
 
-**Coming Next**
+**Maven**
 
-- [ ] Maven
-- [ ] Java Date & Time API
-- [ ] Records
-- [ ] Enums in Backend Applications
-- [ ] Exception Handling Improvements
-- [ ] Modern Java Review
+- [x] Maven Fundamentals
+- [x] Maven Dependencies
+- [x] Maven Lifecycle
+- [x] Maven Project Structure
+- [x] Maven Packaging
+- [x] Maven Local Repository
 
 ---
 
@@ -348,6 +348,15 @@ java-backend
 │   ├── StreamPractice.java
 │   └── StudentStreamPractice.java
 │
+├── day12
+│   └── README.md
+│
+├── maven-practice
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       └── test
+│
 └── README.md
 ```
 
@@ -368,6 +377,7 @@ java-backend
 | Day 09 | Collections — List, Set & Map | ✅ |
 | Day 10 | Generics, Comparable, Comparator & Lambda | ✅ |
 | Day 11 | Stream API, Optional & Collectors | ✅ |
+| Day 12 | Maven & Build Lifecycle | ✅ |
 
 ---
 
@@ -491,9 +501,27 @@ java-backend
 - Optional
 - Method References
 
+**Day 12 — Maven**
+- Maven installation
+- Maven project creation
+- `pom.xml`
+- Maven coordinates
+- Dependencies
+- Local Maven Repository
+- Maven project structure
+- `mvn compile`
+- `mvn test`
+- `mvn package`
+- `mvn install`
+- `mvn clean`
+- JAR packaging
+- `target/`
+- `.gitignore`
+- Git & Maven workflow
+
 ---
 
-## 🧠 Concepts I'm Practicing
+# 🧠 Concepts I'm Practicing
 
 ```text
 Java Fundamentals
@@ -528,19 +556,19 @@ Collections
        ↓
 Generics
        ↓
-Comparable & Comparator
-       ↓
 Lambda Expressions
+       ↓
+Comparator
        ↓
 Stream API
        ↓
-Optional & Collectors
+Optional
        ↓
 Maven
        ↓
 Spring Boot
        ↓
-REST APIs
+REST API
        ↓
 Database
        ↓
@@ -558,9 +586,9 @@ AI Integration
 - Git
 - GitHub
 - VS Code
+- Maven
 
 **Coming Soon**
-- Maven
 - Spring Boot
 - PostgreSQL
 - JPA / Hibernate
@@ -600,9 +628,10 @@ The long-term goal is to combine strong backend engineering fundamentals with AI
 
 **Java**
 
-- 🟩🟩🟩🟩🟩 Java Fundamentals
-- 🟩🟩🟩🟩🟩 OOP Fundamentals
-- 🟩🟩🟩🟩⬜ Collections & Modern Java
+🟩🟩🟩🟩🟩 Java Fundamentals
+🟩🟩🟩🟩🟩 OOP Fundamentals
+🟩🟩🟩🟩⬜ Modern Java
+🟩🟩🟩🟩🟩 Build Tools & Maven
 
 **Backend**
 
@@ -621,25 +650,34 @@ The long-term goal is to combine strong backend engineering fundamentals with AI
 
 ## 🚀 Journey Status
 
-Day 11 completed.
+**Day 12 completed.**
 
-I have completed the core Java and OOP foundation and progressed through the Java Collections Framework and Modern Java features.
+I have completed the core Java and OOP foundation and started working with Modern Java concepts.
 
 So far, I have practiced:
 
-- Java Fundamentals
-- Object-Oriented Programming
-- Exception Handling
 - Collections
 - Generics
-- Comparable & Comparator
 - Lambda Expressions
-- Functional Interfaces
+- Comparator
 - Stream API
 - Optional
-- Collectors
+- Maven
+- Dependency Management
+- Maven Build Lifecycle
+- JAR Packaging
+- Local Maven Repository
 
-The next step is to strengthen my Modern Java knowledge and then move into Maven and Spring Boot, where I will start building real backend applications.
+I also created and built a real Maven project and practiced:
+
+```text
+mvn compile
+mvn test
+mvn package
+mvn install
+mvn clean
+
+The next major step is to move toward Spring Boot and start building real backend applications.
 
 ---
 
