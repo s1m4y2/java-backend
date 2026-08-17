@@ -188,6 +188,30 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Maven Packaging
 - [x] Maven Local Repository
 
+### **Date & Time API**
+
+- [x] `LocalDate`
+- [x] `LocalTime`
+- [x] `LocalDateTime`
+- [x] `DateTimeFormatter`
+- [x] `Period`
+- [x] `Duration`
+- [x] `ChronoUnit`
+
+**Records**
+
+- [x] Record Classes
+- [x] Record Accessor Methods
+- [x] Custom Record Methods
+- [x] Compact Constructors
+- [x] Record Validation
+
+**Sealed Interfaces**
+
+- [x] Sealed Interfaces
+- [x] `permits`
+- [x] `final` Implementations
+
 ---
 
 ### 🔜 Phase 4 — Spring Boot
@@ -356,6 +380,12 @@ java-backend
 │   └── src
 │       ├── main
 │       └── test
+├── day13
+│   ├── README.md
+│   ├── DateTimePractice.java
+│   ├── RecordPractice.java
+│   ├── PaymentPractice.java
+│   └── JobApplicationPractice.java
 │
 └── README.md
 ```
@@ -378,6 +408,7 @@ java-backend
 | Day 10 | Generics, Comparable, Comparator & Lambda | ✅ |
 | Day 11 | Stream API, Optional & Collectors | ✅ |
 | Day 12 | Maven & Build Lifecycle | ✅ |
+| Day 13 | Date & Time, Records, Sealed Interfaces & Modern Java Practice | ✅ |
 
 ---
 
@@ -519,6 +550,27 @@ java-backend
 - `.gitignore`
 - Git & Maven workflow
 
+**Day 13 — Modern Java**
+
+- Date & Time API
+- LocalDate
+- LocalTime
+- LocalDateTime
+- DateTimeFormatter
+- Period
+- Duration
+- Records
+- Record Validation
+- Compact Constructors
+- Sealed Interfaces
+- Payment Practice
+- JobApplication Record
+- Stream + Record Practice
+- Method References
+- Optional
+- Comparator
+- ChronoUnit
+
 ---
 
 # 🧠 Concepts I'm Practicing
@@ -565,6 +617,14 @@ Stream API
 Optional
        ↓
 Maven
+       ↓
+Date & Time API
+       ↓
+Records
+       ↓
+Sealed Interfaces
+       ↓
+Modern Java
        ↓
 Spring Boot
        ↓
@@ -630,7 +690,7 @@ The long-term goal is to combine strong backend engineering fundamentals with AI
 
 🟩🟩🟩🟩🟩 Java Fundamentals
 🟩🟩🟩🟩🟩 OOP Fundamentals
-🟩🟩🟩🟩⬜ Modern Java
+🟩🟩🟩🟩🟩 Modern Java
 🟩🟩🟩🟩🟩 Build Tools & Maven
 
 **Backend**
@@ -650,9 +710,9 @@ The long-term goal is to combine strong backend engineering fundamentals with AI
 
 ## 🚀 Journey Status
 
-**Day 12 completed.**
+**Day 13 completed.**
 
-I have completed the core Java and OOP foundation and started working with Modern Java concepts.
+I have completed the core Java and OOP foundation and strengthened my Modern Java knowledge.
 
 So far, I have practiced:
 
@@ -662,22 +722,37 @@ So far, I have practiced:
 - Comparator
 - Stream API
 - Optional
+- Method References
 - Maven
 - Dependency Management
 - Maven Build Lifecycle
 - JAR Packaging
 - Local Maven Repository
+- Date & Time API
+- Records
+- Compact Constructors
+- Sealed Interfaces
+- ChronoUnit
 
-I also created and built a real Maven project and practiced:
+I also built a small backend-oriented `JobApplicationPractice` using:
 
 ```text
-mvn compile
-mvn test
-mvn package
-mvn install
-mvn clean
+Record
+   ↓
+LocalDate
+   ↓
+Stream API
+   ↓
+filter()
+   ↓
+map()
+   ↓
+Comparator
+   ↓
+ChronoUnit
+   ↓
+Optional
 
-The next major step is to move toward Spring Boot and start building real backend applications.
 
 ---
 
