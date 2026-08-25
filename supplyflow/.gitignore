@@ -1,0 +1,16 @@
+# Application configuration
+src/main/resources/application.properties
+
+# Environment files
+.env
+.env.*
+
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+
+# OS
+.DS_Store
