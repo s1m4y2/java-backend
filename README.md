@@ -1,6 +1,6 @@
 # ☕ Java Backend Journey
 
-> A daily learning journey to become a Java Backend Developer with Spring Boot and AI.
+> A hands-on learning journey to become a production-oriented Java Backend Developer with Spring Boot and AI.
 
 ---
 
@@ -10,15 +10,61 @@ Hi, I'm Simay.
 
 This repository documents my journey of becoming a Java Backend Developer.
 
-Instead of only watching tutorials, I build coding exercises and small projects every day to reinforce each concept through hands-on practice.
+Instead of only watching tutorials, I focus on learning by building.
 
-My goal is to build a strong Java foundation, master Object-Oriented Programming and Modern Java, and then move into Spring Boot, backend architecture, databases, Docker, and AI-powered applications.
+Throughout this journey, I have created Java exercises, mini-projects, and backend applications to strengthen my understanding of core programming concepts, Object-Oriented Programming, Modern Java, Spring Boot, databases, and backend architecture.
+
+The goal is to build a strong foundation and gradually move toward production-oriented backend development and AI-powered applications.
 
 ---
 
-## 🎯 Learning Roadmap
+# 🚀 Learning Journey
 
-### ✅ Phase 1 — Java Fundamentals
+```text
+Java Fundamentals
+        ↓
+Object-Oriented Programming
+        ↓
+Collections & Generics
+        ↓
+Lambda Expressions
+        ↓
+Stream API
+        ↓
+Optional & Method References
+        ↓
+Maven
+        ↓
+Modern Java
+        ↓
+Spring Boot
+        ↓
+REST APIs
+        ↓
+PostgreSQL
+        ↓
+JPA / Hibernate
+        ↓
+Backend Architecture
+        ↓
+Testing
+        ↓
+Production-Oriented Backend
+        ↓
+Security
+        ↓
+Docker
+        ↓
+Distributed Systems
+        ↓
+AI Integration
+```
+
+---
+
+# 🧠 Learning Roadmap
+
+## ✅ Phase 1 — Java Fundamentals
 
 - [x] Variables & Data Types
 - [x] Variable Naming
@@ -52,9 +98,9 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 
 ---
 
-### ✅ Phase 2 — Object-Oriented Programming
+## ✅ Phase 2 — Object-Oriented Programming
 
-**Classes & Encapsulation**
+### Classes & Encapsulation
 
 - [x] Classes & Objects
 - [x] Object Creation with `new`
@@ -72,7 +118,7 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Static Methods
 - [x] `==` vs `equals()`
 
-**Inheritance & Polymorphism**
+### Inheritance & Polymorphism
 
 - [x] Method Overloading
 - [x] Inheritance
@@ -89,17 +135,11 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Multiple Interface Implementation
 - [x] Abstract Class + Interface
 
-**Advanced Polymorphism**
-
-- [ ] Upcasting & Downcasting
-- [ ] Dynamic Method Dispatch
-- [ ] Interface References
-
 ---
 
-### ✅ Phase 3 — Java Collections & Modern Java
+## ✅ Phase 3 — Collections & Modern Java
 
-**Collections**
+### Collections
 
 - [x] Collection Framework
 - [x] ArrayList
@@ -111,14 +151,14 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] List vs Set vs Map
 - [x] Collection Selection
 
-**Generics**
+### Generics
 
 - [x] Generic Classes
 - [x] Generic Methods
 - [x] Type Parameters
 - [x] Type Safety
 
-**Comparable & Comparator**
+### Comparable & Comparator
 
 - [x] `Comparable`
 - [x] `compareTo()`
@@ -128,7 +168,7 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] `reversed()`
 - [x] Multi-level Sorting
 
-**Lambda Expressions**
+### Lambda Expressions
 
 - [x] Lambda Syntax
 - [x] Functional Interfaces
@@ -139,7 +179,7 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] `Consumer`
 - [x] `Supplier`
 
-**Stream API**
+### Stream API
 
 - [x] Stream Creation
 - [x] Stream Pipeline
@@ -167,19 +207,16 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] `counting()`
 - [x] `partitioningBy()`
 
-**Optional**
+### Optional & Method References
 
 - [x] `Optional`
+- [x] Optional Value Handling
 - [x] `findFirst()` with Optional
 - [x] `max()` / `min()` with Optional
-- [x] Optional value handling
-
-**Method References**
-
 - [x] Method Reference `::`
 - [x] Lambda vs Method Reference
 
-**Maven**
+### Maven
 
 - [x] Maven Fundamentals
 - [x] Maven Dependencies
@@ -187,8 +224,11 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Maven Project Structure
 - [x] Maven Packaging
 - [x] Maven Local Repository
+- [x] Build Lifecycle
+- [x] JAR Packaging
+- [x] `.gitignore`
 
-### **Date & Time API**
+### Date & Time API
 
 - [x] `LocalDate`
 - [x] `LocalTime`
@@ -198,7 +238,7 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] `Duration`
 - [x] `ChronoUnit`
 
-**Records**
+### Records
 
 - [x] Record Classes
 - [x] Record Accessor Methods
@@ -206,7 +246,7 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 - [x] Compact Constructors
 - [x] Record Validation
 
-**Sealed Interfaces**
+### Sealed Interfaces
 
 - [x] Sealed Interfaces
 - [x] `permits`
@@ -214,54 +254,185 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 
 ---
 
-### 🔜 Phase 4 — Spring Boot
+# 🚀 Phase 4 — Spring Boot & Backend Development
 
-- [ ] Spring Boot
-- [ ] Maven
-- [ ] Dependency Injection
-- [ ] IoC
-- [ ] Beans
-- [ ] Controller
-- [ ] Service
-- [ ] Repository
-- [ ] DTO
-- [ ] REST API
-- [ ] PostgreSQL
-- [ ] Spring Data JPA
-- [ ] Hibernate
-- [ ] Validation
-- [ ] Swagger / OpenAPI
+## ✅ Completed
+
+- [x] Spring Boot
+- [x] Dependency Injection
+- [x] IoC
+- [x] Spring Beans
+- [x] Controller Layer
+- [x] Service Layer
+- [x] Repository Layer
+- [x] DTO Pattern
+- [x] REST API Development
+- [x] PostgreSQL
+- [x] Spring Data JPA
+- [x] Hibernate
+- [x] Entity Relationships
+- [x] Request Validation
+- [x] Global Exception Handling
+- [x] Swagger / OpenAPI
+- [x] Unit Testing
+- [x] Controller Testing
+- [x] MockMvc
+- [x] Mockito
+
+---
+
+# 🏗 Featured Backend Project
+
+## 🚀 SupplyFlow — Intelligent Supply & Inventory Management Platform
+
+My first complete Spring Boot backend application.
+
+SupplyFlow is designed to manage:
+
+- 📦 Products
+- 🏢 Suppliers
+- 📊 Stock Levels
+- 🔄 Stock Movements
+- 📑 Purchase Orders
+
+The application also includes business logic for:
+
+- 🚨 Critical stock detection
+- 🤖 Automatic order suggestions
+- 📦 Automatic stock updates after delivery
+- 🔄 Stock movement tracking
+- 📑 Purchase order lifecycle management
+- 🛡 Business validation
+- 🚫 Duplicate order prevention
+
+### Architecture
+
+```text
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+PostgreSQL
+```
+
+Additional layers:
+
+- DTO
+- Validation
+- Exception Handling
+- Testing
+- Swagger / OpenAPI
+
+### Technologies
+
+- Java 21
+- Spring Boot 3.5
+- Spring Web
+- Spring Data JPA
+- Hibernate
+- PostgreSQL
+- Maven
+- JUnit 5
+- Mockito
+- MockMvc
+- Jakarta Validation
+- Swagger / OpenAPI
+
+### Testing
+
+```text
+Tests run: 58
+Failures: 0
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
+```
+
+📌 The complete project is available in its own repository:
+
+**SupplyFlow — Intelligent Supply & Inventory Management Platform**
+
+---
+
+# 📈 Current Progress
+
+## Java
+
+🟩🟩🟩🟩🟩 Java Fundamentals
+
+🟩🟩🟩🟩🟩 Object-Oriented Programming
+
+🟩🟩🟩🟩🟩 Collections & Generics
+
+🟩🟩🟩🟩🟩 Modern Java
+
+🟩🟩🟩🟩🟩 Maven
+
+## Backend
+
+🟩🟩🟩🟩🟩 Spring Boot
+
+🟩🟩🟩🟩🟩 REST API
+
+🟩🟩🟩🟩🟩 PostgreSQL
+
+🟩🟩🟩🟩🟩 JPA / Hibernate
+
+🟩🟩🟩🟩🟩 DTO & Validation
+
+🟩🟩🟩🟩🟩 Swagger / OpenAPI
+
+🟩🟩🟩🟩🟩 Testing
+
+⬜⬜⬜⬜⬜ Spring Security
+
+⬜⬜⬜⬜⬜ JWT Authentication
+
+⬜⬜⬜⬜⬜ Docker
+
+## AI
+
+⬜⬜⬜⬜⬜ AI Backend Integration
+
+⬜⬜⬜⬜⬜ AI-powered Applications
+
+---
+
+# 🔜 Phase 5 — Production Backend
+
+Next topics:
+
 - [ ] Spring Security
 - [ ] JWT Authentication
-- [ ] Docker
-
----
-
-### 🔜 Phase 5 — Production Backend
-
+- [ ] Role-Based Authorization
+- [ ] Pagination
+- [ ] Filtering
 - [ ] Clean Architecture
-- [ ] Layered Architecture
-- [ ] SOLID
+- [ ] SOLID Principles
 - [ ] Design Patterns
-- [ ] Redis
-- [ ] RabbitMQ
 - [ ] Caching
+- [ ] Redis
 - [ ] Logging
 - [ ] Monitoring
+- [ ] Docker
 - [ ] Docker Compose
-- [ ] Microservices
-- [ ] API Documentation
-- [ ] Testing
-- [ ] Unit Testing
 - [ ] Integration Testing
+- [ ] API Versioning
+- [ ] CI/CD
+- [ ] Deployment
 
 ---
 
-### 🔜 Phase 6 — AI Integration
+# 🤖 Phase 6 — AI Integration
+
+Future projects and topics:
 
 - [ ] AI Resume Analyzer
 - [ ] Spring Boot + Python
-- [ ] Gemini / OpenAI API
+- [ ] OpenAI / Gemini API Integration
 - [ ] REST Communication
 - [ ] Docker Compose
 - [ ] Microservice Architecture
@@ -270,402 +441,50 @@ My goal is to build a strong Java foundation, master Object-Oriented Programming
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 java-backend
 │
 ├── day01
-│   ├── README.md
-│   ├── StudentInformationSystem.java
-│   ├── TemperatureConverter.java
-│   └── SalaryCalculator.java
-│
 ├── day02
-│   ├── README.md
-│   ├── atmMenu.java
-│   ├── calculator.java
-│   ├── Car.java
-│   └── StudentGradeManager.java
-│
 ├── day03
-│   ├── README.md
-│   ├── BankAccount.java
-│   ├── Employee.java
-│   └── EqualsDemo.java
-│
 ├── day04
-│   ├── README.md
-│   ├── Calculator.java
-│   ├── Person.java
-│   ├── PersonTest.java
-│   ├── Vehicle.java
-│   ├── Car.java
-│   └── EmployeeHierarchy.java
-│
 ├── day05
-│   ├── README.md
-│   ├── AnimalSystem.java
-│   ├── Dog.java
-│   ├── Cat.java
-│   ├── ShapeSystem.java
-│   ├── Circle.java
-│   ├── Rectangle.java
-│   ├── PaymentSystem.java
-│   ├── CreditCardPayment.java
-│   ├── PayPalPayment.java
-│   ├── BankTransferPayment.java
-│   ├── Employee.java
-│   └── Developer.java
-│
 ├── day06
-│   ├── README.md
-│   ├── Flyable.java
-│   ├── Bird.java
-│   ├── Airplane.java
-│   ├── PaymentMethod.java
-│   ├── CreditCardPayment.java
-│   ├── PayPalPayment.java
-│   ├── BankTransferPayment.java
-│   ├── Animal.java
-│   ├── Duck.java
-│   ├── Swimmable.java
-│   ├── NotificationService.java
-│   ├── EmailNotification.java
-│   ├── SmsNotification.java
-│   └── PushNotification.java
-│
 ├── day07
-│   └── README.md
-│
 ├── day08
-│   ├── README.md
-│   ├── SifiraBolmeHatasi.java
-│   ├── BolmeIslemi.java
-│   ├── InvalidAgeException.java
-│   ├── ValidateAge.java
-│   ├── NegativeNumberException.java
-│   └── ValidateNumber.java
-│
 ├── day09
-│   ├── README.md
-│   ├── ArrayListPractice.java
-│   ├── StudentListManager.java
-│   ├── NumberListPractice.java
-│   ├── LinkedListPractice.java
-│   ├── HashSetPractice.java
-│   ├── LinkedHashSetPractice.java
-│   ├── TreeSetPractice.java
-│   ├── HashMapPractice.java
-│   └── StudentManagementSystem.java
-│
 ├── day10
-│   ├── README.md
-│   ├── GenericBox.java
-│   ├── GenericMethodPractice.java
-│   ├── Student.java
-│   ├── LambdaPractice.java
-│   └── StreamPractice.java
-│
 ├── day11
-│   ├── README.md
-│   ├── StreamPractice.java
-│   └── StudentStreamPractice.java
-│
 ├── day12
-│   └── README.md
-│
-├── maven-practice
-│   ├── pom.xml
-│   └── src
-│       ├── main
-│       └── test
 ├── day13
-│   ├── README.md
-│   ├── DateTimePractice.java
-│   ├── RecordPractice.java
-│   ├── PaymentPractice.java
-│   └── JobApplicationPractice.java
+├── maven-practice
+├── supplyflow
 │
 └── README.md
 ```
 
+The daily folders contain Java exercises and mini-projects created while learning the concepts listed above.
+
 ---
 
-## 📅 Daily Progress
+# 📅 Learning Progress
 
-| Day | Topics | Status |
+| Phase | Focus | Status |
 |---|---|---|
-| Day 01 | Java Fundamentals | ✅ |
-| Day 02 | Control Flow, Arrays & OOP Basics | ✅ |
-| Day 03 | Encapsulation, Access Control & Static | ✅ |
-| Day 04 | Overloading, Inheritance, `super` & Overriding | ✅ |
-| Day 05 | Abstract Classes & Abstract Methods | ✅ |
-| Day 06 | Interfaces & Multiple Interface Implementation | ✅ |
-| Day 07 | General Java & OOP Review | ✅ |
-| Day 08 | Exception Handling & Custom Exceptions | ✅ |
-| Day 09 | Collections — List, Set & Map | ✅ |
-| Day 10 | Generics, Comparable, Comparator & Lambda | ✅ |
-| Day 11 | Stream API, Optional & Collectors | ✅ |
-| Day 12 | Maven & Build Lifecycle | ✅ |
-| Day 13 | Date & Time, Records, Sealed Interfaces & Modern Java Practice | ✅ |
+| Phase 1 | Java Fundamentals | ✅ Completed |
+| Phase 2 | Object-Oriented Programming | ✅ Completed |
+| Phase 3 | Collections & Modern Java | ✅ Completed |
+| Phase 4 | Spring Boot & Backend Development | ✅ First Complete Project Built |
+| Phase 5 | Production Backend | 🔄 Next |
+| Phase 6 | AI Integration | 🔜 Planned |
 
 ---
 
-## 💻 Mini Projects & Exercises
+# 🎯 Final Goal
 
-**Day 1 — Java Fundamentals**
-- Student Information System
-- Temperature Converter
-- Salary Calculator
-
-**Day 2 — Control Flow & OOP Basics**
-- ATM Menu
-- Calculator
-- Car Class
-- Student Grade Manager
-
-**Day 3 — Encapsulation & Static**
-- Bank Account
-- Employee
-- Equals Demo
-
-**Day 4 — Inheritance & Overloading**
-- Calculator — Method Overloading
-- Person — Access Modifiers
-- Vehicle & Car — Inheritance
-- Employee Hierarchy — Method Overriding
-
-**Day 5 — Abstract Classes**
-- Animal System
-- Shape System
-- Payment System
-- Employee Hierarchy
-- Abstract Classes & Abstract Methods
-
-**Day 6 — Interfaces**
-- Flyable Interface
-- Bird & Airplane
-- Payment Method Interface
-- Credit Card / PayPal / Bank Transfer
-- Abstract Animal + Flyable + Swimmable
-- Notification Service
-- Email / SMS / Push Notifications
-- Multiple Interface Implementation
-
-**Day 7 — General Review**
-- Java Fundamentals Review
-- OOP Review
-- Constructors & `this`
-- Encapsulation
-- Inheritance
-- `super`
-- Overloading & Overriding
-- Abstract Classes
-- Interfaces
-- Polymorphism
-- General Knowledge Test
-
-**Day 8 — Exception Handling**
-- Custom Exception — SifiraBolmeHatasi
-- Division Operation
-- `try` / `catch` / `finally`
-- `throw`
-- `throws`
-- InvalidAgeException
-- Age Validation
-- NegativeNumberException
-- Number Validation
-- InputMismatchException
-
-**Day 9 — Collections**
-- ArrayList Practice
-- Student List Manager
-- Number List Practice
-- LinkedList Practice
-- HashSet Practice
-- LinkedHashSet Practice
-- TreeSet Practice
-- HashMap Practice
-- Student Management System
-- Collection Selection & Comparison
-
-**Day 10 — Generics, Comparator & Lambda**
-- GenericBox
-- Generic Methods
-- Comparable
-- `compareTo()`
-- Comparator
-- Multi-level Sorting
-- Lambda Expressions
-- Functional Interfaces
-- Predicate
-- Function
-- Consumer
-- Supplier
-- Stream API Introduction
-
-**Day 11 — Stream API**
-- Stream Practice
-- Student Stream Practice
-- `filter()`
-- `map()`
-- `sorted()`
-- `distinct()`
-- `limit()`
-- `skip()`
-- `collect()`
-- `count()`
-- `findFirst()`
-- `anyMatch()`
-- `allMatch()`
-- `noneMatch()`
-- `max()`
-- `min()`
-- `mapToInt()`
-- `sum()`
-- `average()`
-- `summaryStatistics()`
-- `groupingBy()`
-- `counting()`
-- `partitioningBy()`
-- Optional
-- Method References
-
-**Day 12 — Maven**
-- Maven installation
-- Maven project creation
-- `pom.xml`
-- Maven coordinates
-- Dependencies
-- Local Maven Repository
-- Maven project structure
-- `mvn compile`
-- `mvn test`
-- `mvn package`
-- `mvn install`
-- `mvn clean`
-- JAR packaging
-- `target/`
-- `.gitignore`
-- Git & Maven workflow
-
-**Day 13 — Modern Java**
-
-- Date & Time API
-- LocalDate
-- LocalTime
-- LocalDateTime
-- DateTimeFormatter
-- Period
-- Duration
-- Records
-- Record Validation
-- Compact Constructors
-- Sealed Interfaces
-- Payment Practice
-- JobApplication Record
-- Stream + Record Practice
-- Method References
-- Optional
-- Comparator
-- ChronoUnit
-
----
-
-# 🧠 Concepts I'm Practicing
-
-```text
-Java Fundamentals
-       ↓
-Methods & Arrays
-       ↓
-Classes & Objects
-       ↓
-Encapsulation
-       ↓
-Constructors & this
-       ↓
-Access Modifiers
-       ↓
-Static
-       ↓
-Method Overloading
-       ↓
-Inheritance
-       ↓
-super
-       ↓
-Method Overriding
-       ↓
-Abstract Classes
-       ↓
-Interfaces
-       ↓
-Polymorphism
-       ↓
-Collections
-       ↓
-Generics
-       ↓
-Lambda Expressions
-       ↓
-Comparator
-       ↓
-Stream API
-       ↓
-Optional
-       ↓
-Maven
-       ↓
-Date & Time API
-       ↓
-Records
-       ↓
-Sealed Interfaces
-       ↓
-Modern Java
-       ↓
-Spring Boot
-       ↓
-REST API
-       ↓
-Database
-       ↓
-Production Backend
-       ↓
-AI Integration
-```
-
----
-
-## 🛠 Tech Stack
-
-**Currently Using**
-- Java
-- Git
-- GitHub
-- VS Code
-- Maven
-
-**Coming Soon**
-- Spring Boot
-- PostgreSQL
-- JPA / Hibernate
-- Docker
-- Spring Security
-- JWT
-- REST APIs
-- Redis
-- RabbitMQ
-- Microservices
-- AI APIs
-
----
-
-## 🎯 Final Goal
-
-Build production-ready backend applications using:
+My goal is to build scalable and production-oriented backend applications using:
 
 - Java
 - Spring Boot
@@ -676,84 +495,40 @@ Build production-ready backend applications using:
 - JWT Authentication
 - Docker
 - Redis
-- RabbitMQ
+- Message Queues
 - Microservices
 - AI Integration
 
-The long-term goal is to combine strong backend engineering fundamentals with AI technologies to build scalable and intelligent backend applications.
+The long-term goal is to combine strong backend engineering fundamentals with AI technologies to build intelligent, scalable applications.
 
 ---
 
-## 📈 Current Progress
+# 🚀 Journey Status
 
-**Java**
+Java foundations → **Completed** ✅
 
-🟩🟩🟩🟩🟩 Java Fundamentals
-🟩🟩🟩🟩🟩 OOP Fundamentals
-🟩🟩🟩🟩🟩 Modern Java
-🟩🟩🟩🟩🟩 Build Tools & Maven
+Object-Oriented Programming → **Completed** ✅
 
-**Backend**
+Modern Java → **Completed** ✅
 
-- ⬜ Spring Boot
-- ⬜ REST API
-- ⬜ Database
-- ⬜ Security
-- ⬜ Docker
+First complete Spring Boot backend application → **Completed** ✅
 
-**AI**
+## 🎉 Current Milestone
 
-- ⬜ AI Backend Integration
-- ⬜ AI-powered Applications
+**SupplyFlow successfully completed as my first full backend project.**
 
----
-
-## 🚀 Journey Status
-
-**Day 13 completed.**
-
-I have completed the core Java and OOP foundation and strengthened my Modern Java knowledge.
-
-So far, I have practiced:
-
-- Collections
-- Generics
-- Lambda Expressions
-- Comparator
-- Stream API
-- Optional
-- Method References
-- Maven
-- Dependency Management
-- Maven Build Lifecycle
-- JAR Packaging
-- Local Maven Repository
-- Date & Time API
-- Records
-- Compact Constructors
-- Sealed Interfaces
-- ChronoUnit
-
-I also built a small backend-oriented `JobApplicationPractice` using:
+The journey now continues with:
 
 ```text
-Record
-   ↓
-LocalDate
-   ↓
-Stream API
-   ↓
-filter()
-   ↓
-map()
-   ↓
-Comparator
-   ↓
-ChronoUnit
-   ↓
-Optional
+Production Backend Development
+        ↓
+Security
+        ↓
+Docker
+        ↓
+Distributed Systems
+        ↓
+AI Integration
+```
 
-
----
-
-⭐ This repository is updated daily as I continue my backend development journey.
+**Next stop: Production Backend Development. 🚀**

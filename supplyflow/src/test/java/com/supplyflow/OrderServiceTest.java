@@ -16,9 +16,10 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.Optional;
-
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -488,4 +489,98 @@ public class OrderServiceTest {
                 orders.get(1)
         );
     }
+
+    // =========================
+        // DO NOT CREATE DUPLICATE
+        // OPEN ORDER
+        // =========================
+
+        @Test
+        void shouldNotCreateDuplicateOrderForProductWithOpenOrder() {
+
+        OrderSuggestion suggestion =
+                new OrderSuggestion(
+                        1L,
+                        1L,
+                        10
+                );
+
+        when(
+                productService.getAllOrderSuggestions()
+        ).thenReturn(
+                List.of(suggestion)
+        );
+
+        when(
+                orderRepository
+                        .existsByProductIdAndStatusIn(
+                                eq(1L),
+                                any()
+                        )
+        ).thenReturn(true);
+
+
+        List<Order> result =
+                orderService
+                        .createOrdersForCriticalProducts();
+
+
+        assertTrue(
+                result.isEmpty()
+        );
+
+        verify(
+                orderRepository,
+                never()
+        ).save(
+                any(Order.class)
+        );
+        }
+
+        // =========================
+        // CANNOT DELIVER
+        // UNAPPROVED ORDER
+        // =========================
+
+        @Test
+        void shouldThrowExceptionWhenDeliveringCreatedOrder() {
+
+        Order order =
+                new Order(
+                        1L,
+                        1L,
+                        5
+                );
+
+
+        when(
+                orderRepository.findById(1L)
+        ).thenReturn(
+                Optional.of(order)
+        );
+
+
+        assertThrows(
+                IllegalStateException.class,
+                () -> orderService.deliverOrder(1L)
+        );
+
+
+        verify(
+                productService,
+                never()
+        ).increaseStock(
+                any(),
+                anyInt(),
+                any()
+        );
+
+
+        verify(
+                orderRepository,
+                never()
+        ).save(
+                any(Order.class)
+        );
+        }
 }

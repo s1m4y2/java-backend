@@ -4,9 +4,9 @@ import com.supplyflow.dto.CreateSupplierRequest;
 import com.supplyflow.dto.UpdateSupplierRequest;
 import com.supplyflow.model.Supplier;
 import com.supplyflow.service.SupplierService;
-
+import com.supplyflow.dto.SupplierResponse;
 import jakarta.validation.Valid;
-
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +15,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/suppliers")
+@Tag(
+        name = "Suppliers",
+        description = "Supplier management operations"
+)
 public class SupplierController {
 
     private final SupplierService supplierService;
@@ -32,10 +36,14 @@ public class SupplierController {
     // =========================
 
     @GetMapping
-    public List<Supplier> getAllSuppliers() {
+        public List<SupplierResponse> getAllSuppliers() {
 
-        return supplierService.getAllSuppliers();
-    }
+        return supplierService
+                .getAllSuppliers()
+                .stream()
+                .map(SupplierResponse::from)
+                .toList();
+        }
 
 
     // =========================
@@ -43,12 +51,15 @@ public class SupplierController {
     // =========================
 
     @GetMapping("/{id}")
-    public Supplier getSupplierById(
-            @PathVariable("id") Long id
-    ) {
+        public SupplierResponse getSupplierById(
+                @PathVariable("id") Long id
+        ) {
 
-        return supplierService.getSupplierById(id);
-    }
+        Supplier supplier =
+                supplierService.getSupplierById(id);
+
+        return SupplierResponse.from(supplier);
+        }
 
 
     // =========================
@@ -56,9 +67,9 @@ public class SupplierController {
     // =========================
 
     @PostMapping
-    public ResponseEntity<Supplier> createSupplier(
-            @Valid @RequestBody CreateSupplierRequest request
-    ) {
+        public ResponseEntity<SupplierResponse> createSupplier(
+                @Valid @RequestBody CreateSupplierRequest request
+        ) {
 
         Supplier createdSupplier =
                 supplierService.createSupplier(
@@ -69,8 +80,10 @@ public class SupplierController {
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(createdSupplier);
-    }
+                .body(
+                        SupplierResponse.from(createdSupplier)
+                );
+        }
 
 
     // =========================
@@ -78,10 +91,10 @@ public class SupplierController {
     // =========================
 
     @PutMapping("/{id}")
-    public ResponseEntity<Supplier> updateSupplier(
-            @PathVariable("id") Long id,
-            @Valid @RequestBody UpdateSupplierRequest request
-    ) {
+        public ResponseEntity<SupplierResponse> updateSupplier(
+                @PathVariable("id") Long id,
+                @Valid @RequestBody UpdateSupplierRequest request
+        ) {
 
         Supplier updatedSupplier =
                 new Supplier(
@@ -97,8 +110,10 @@ public class SupplierController {
                         updatedSupplier
                 );
 
-        return ResponseEntity.ok(result);
-    }
+        return ResponseEntity.ok(
+                SupplierResponse.from(result)
+        );
+        }
 
 
     // =========================

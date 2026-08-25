@@ -2,11 +2,11 @@ package com.supplyflow;
 
 import com.supplyflow.controller.SupplierController;
 import com.supplyflow.exception.GlobalExceptionHandler;
+import com.supplyflow.exception.SupplierNotFoundException;
 import com.supplyflow.model.Supplier;
 import com.supplyflow.service.SupplierService;
 import static org.mockito.Mockito.verify;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -301,5 +301,41 @@ public class SupplierControllerTest {
         verify(
                 supplierService
         ).deleteSupplier(1L);
+        }
+
+        // =========================
+        // SUPPLIER NOT FOUND
+        // =========================
+
+        @Test
+        void shouldReturnNotFoundWhenSupplierDoesNotExist()
+                throws Exception {
+
+        when(
+                supplierService.getSupplierById(999L)
+        ).thenThrow(
+                new SupplierNotFoundException(999L)
+        );
+
+        mockMvc.perform(
+                        get("/suppliers/999")
+                )
+                .andExpect(
+                        status().isNotFound()
+                )
+                .andExpect(
+                        jsonPath("$.status")
+                                .value(404)
+                )
+                .andExpect(
+                        jsonPath("$.error")
+                                .value("Not Found")
+                )
+                .andExpect(
+                        jsonPath("$.message")
+                                .value(
+                                        "Supplier with ID 999 not found."
+                                )
+                );
         }
 }

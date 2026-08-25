@@ -1,15 +1,17 @@
 package com.supplyflow.model;
-
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 public class OrderSuggestion {
 
     private final Long productId;
     private final Long supplierId;
     private final int recommendedQuantity;
 
+    @JsonCreator
     public OrderSuggestion(
-            Long productId,
-            Long supplierId,
-            int recommendedQuantity
+            @JsonProperty("productId") Long productId,
+            @JsonProperty("supplierId") Long supplierId,
+            @JsonProperty("recommendedQuantity") int recommendedQuantity
     ) {
         this.productId = productId;
         this.supplierId = supplierId;

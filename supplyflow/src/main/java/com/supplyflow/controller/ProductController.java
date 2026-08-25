@@ -3,11 +3,11 @@ package com.supplyflow.controller;
 import com.supplyflow.dto.CreateProductRequest;
 import com.supplyflow.dto.StockUpdateRequest;
 import com.supplyflow.dto.UpdateProductRequest;
-
+import com.supplyflow.dto.ProductResponse;
 import com.supplyflow.model.OrderSuggestion;
 import com.supplyflow.model.Product;
 import com.supplyflow.model.Supplier;
-
+import io.swagger.v3.oas.annotations.tags.Tag;
 import com.supplyflow.service.ProductService;
 
 import jakarta.validation.Valid;
@@ -22,6 +22,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
+@Tag(
+        name = "Products",
+        description = "Product management and stock operations"
+)
 public class ProductController {
 
     private final ProductService productService;
@@ -41,11 +45,14 @@ public class ProductController {
     // =========================
 
     @GetMapping
-    public List<Product> getAllProducts() {
+        public List<ProductResponse> getAllProducts() {
 
         return productService
-                .getAllProducts();
-    }
+                .getAllProducts()
+                .stream()
+                .map(ProductResponse::from)
+                .toList();
+        }
 
 
     // =========================
@@ -53,12 +60,15 @@ public class ProductController {
     // =========================
 
     @GetMapping("/critical")
-    public List<Product>
-    getCriticalStockProducts() {
+        public List<ProductResponse>
+        getCriticalStockProducts() {
 
         return productService
-                .getCriticalStockProducts();
-    }
+                .getCriticalStockProducts()
+                .stream()
+                .map(ProductResponse::from)
+                .toList();
+        }
 
 
     // =========================
@@ -94,13 +104,15 @@ public class ProductController {
     // =========================
 
     @GetMapping("/{id}")
-    public Product getProductById(
-            @PathVariable("id") Long id
-    ) {
+        public ProductResponse getProductById(
+                @PathVariable("id") Long id
+        ) {
 
-        return productService
-                .getProductById(id);
-    }
+        Product product =
+                productService.getProductById(id);
+
+        return ProductResponse.from(product);
+        }
 
 
     // =========================
@@ -108,12 +120,12 @@ public class ProductController {
     // =========================
 
     @PostMapping
-    public ResponseEntity<Product>
-    createProduct(
-            @Valid
-            @RequestBody
-            CreateProductRequest request
-    ) {
+        public ResponseEntity<ProductResponse>
+        createProduct(
+                @Valid
+                @RequestBody
+                CreateProductRequest request
+        ) {
 
         Product product =
                 productService.createProduct(
@@ -126,8 +138,8 @@ public class ProductController {
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(product);
-    }
+                .body(ProductResponse.from(product));
+        }
 
 
     // =========================
@@ -135,14 +147,14 @@ public class ProductController {
     // =========================
 
     @PutMapping("/{id}")
-    public ResponseEntity<Product>
-    updateProduct(
-            @PathVariable("id") Long id,
+        public ResponseEntity<ProductResponse>
+        updateProduct(
+                @PathVariable("id") Long id,
 
-            @Valid
-            @RequestBody
-            UpdateProductRequest request
-    ) {
+                @Valid
+                @RequestBody
+                UpdateProductRequest request
+        ) {
 
         Supplier supplier =
                 new Supplier(
@@ -169,8 +181,10 @@ public class ProductController {
                 );
 
         return ResponseEntity
-                .ok(updatedProduct);
-    }
+                .ok(
+                        ProductResponse.from(updatedProduct)
+                );
+        }
 
 
     // =========================
@@ -178,15 +192,15 @@ public class ProductController {
     // =========================
 
     @PatchMapping("/{id}/increase-stock")
-    public ResponseEntity<Product>
-    increaseStock(
+        public ResponseEntity<ProductResponse>
+        increaseStock(
 
-            @PathVariable("id") Long id,
+                @PathVariable("id") Long id,
 
-            @Valid
-            @RequestBody
-            StockUpdateRequest request
-    ) {
+                @Valid
+                @RequestBody
+                StockUpdateRequest request
+        ) {
 
         productService.increaseStock(
                 id,
@@ -197,8 +211,10 @@ public class ProductController {
                 productService.getProductById(id);
 
         return ResponseEntity
-                .ok(product);
-    }
+                .ok(
+                        ProductResponse.from(product)
+                );
+        }
 
 
     // =========================
@@ -206,15 +222,15 @@ public class ProductController {
     // =========================
 
     @PatchMapping("/{id}/decrease-stock")
-    public ResponseEntity<Product>
-    decreaseStock(
+        public ResponseEntity<ProductResponse>
+        decreaseStock(
 
-            @PathVariable("id") Long id,
+                @PathVariable("id") Long id,
 
-            @Valid
-            @RequestBody
-            StockUpdateRequest request
-    ) {
+                @Valid
+                @RequestBody
+                StockUpdateRequest request
+        ) {
 
         productService.decreaseStock(
                 id,
@@ -225,8 +241,10 @@ public class ProductController {
                 productService.getProductById(id);
 
         return ResponseEntity
-                .ok(product);
-    }
+                .ok(
+                        ProductResponse.from(product)
+                );
+        }
      // =========================
     // DELETE PRODUCT
     // =========================

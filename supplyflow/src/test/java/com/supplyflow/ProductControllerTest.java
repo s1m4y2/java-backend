@@ -2,9 +2,10 @@ package com.supplyflow;
 
 import com.supplyflow.controller.ProductController;
 import com.supplyflow.exception.GlobalExceptionHandler;
+import com.supplyflow.exception.ProductNotFoundException;
 import com.supplyflow.model.Product;
 import com.supplyflow.service.ProductService;
-
+import com.supplyflow.exception.ProductNotFoundException;
 import org.junit.jupiter.api.Test;
 import com.supplyflow.model.Supplier;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -417,4 +418,42 @@ public class ProductControllerTest {
                                 .exists()
                 );
     }
+
+    // =========================
+        // PRODUCT NOT FOUND
+        // =========================
+
+        @Test
+        void shouldReturnNotFoundWhenProductDoesNotExist()
+                throws Exception {
+
+        when(
+                productService.getProductById(999L)
+        ).thenThrow(
+                new ProductNotFoundException(999L)
+        );
+
+        mockMvc.perform(
+                        get("/products/999")
+                )
+                .andExpect(
+                        status().isNotFound()
+                )
+                .andExpect(
+                        jsonPath("$.status")
+                                .value(404)
+                )
+                .andExpect(
+                        jsonPath("$.error")
+                                .value("Not Found")
+                )
+                .andExpect(
+                        jsonPath("$.message")
+                                .value(
+                                        "Product with ID 999 not found."
+                                )
+                );
+        }
+
+        
 }
